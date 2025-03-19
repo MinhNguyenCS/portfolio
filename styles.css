@@ -297,33 +297,23 @@ a {
 }
 
 .btn:hover {
-  /* transition: 0.4s 0.5s; */
   transition: 0.5s;
   scale: 1.0;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.574);
-  /* border-color: rgb(241, 193, 247);
-  color: #ffffffef; */
+ 
 }
 
 .btn::before {
   content: "";
   position: absolute;
-  /* top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;   OR*/
   height: 100%;
   width: 100%;
-  /* transform: scaleY(0.14); */
   transform: translate(0%, 82%);
   transform-origin: bottom;
-  /* transition: 0.3s ease; */
   transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-  /* border-radius: 80px; */
   z-index: -1;
   background-image: linear-gradient(135deg, #7b4397, #dc2430);
-  /* border-radius: inherit; */
 }
 
 .btn:hover::before {
@@ -344,8 +334,7 @@ a {
 
 .hero-section-right {
   position: relative;
-  /* margin-right: 5rem; */
-  /* padding-right: 5rem; */
+   margin-bottom: 15rem;
 }
 
 .myCard {
@@ -411,16 +400,16 @@ a {
 
 .backSide,
 .backSide::before {
-  /* background-image: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
-  /* background-color: #ffd700; */
-  background: linear-gradient(143.42deg, #4AB1F1 0.58%, #566CEC 37.22%, #D749AF 73.87%, #FF7C51 112.26%);
-  /* background: linear-gradient(140deg, #03001e, #7303c0, #ec38bc,white); */
+  background-image: url("./userAsset/avt2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .backSide {
   transform: rotateY(180deg);
   /* transform: rotateY(180deg) rotateZ(180deg); */
 }
+
 
 .frontSide::before,
 .backSide::before {
@@ -503,6 +492,7 @@ a {
     top: -10%;
     gap: 1rem;
   }
+
 
   .hero-section-description {
     font-size: 13px;
