@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
 
 * {
   margin: 0;
@@ -52,7 +52,6 @@
 
 /* ------------------custom scrollbar -------------------------------------*/
 
-
 .navbar {
   display: flex;
   width: 100%;
@@ -75,14 +74,12 @@
   position: fixed;
 }
 
-
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
 }
-
 
 .logo {
   width: 28px;
@@ -133,7 +130,6 @@ a {
 }
 
 .nav-item a:hover {
-
   color: rgba(246, 230, 230, 0.858);
 }
 
@@ -165,7 +161,7 @@ a {
   display: none;
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .nav-items {
     display: none;
   }
@@ -178,8 +174,6 @@ a {
     display: block;
   }
 }
-
-
 
 /*================================== Hero Section Start==========================================  */
 
@@ -198,7 +192,6 @@ a {
   width: 100%;
   position: relative;
   flex-direction: row;
-
 }
 
 .space video {
@@ -213,7 +206,6 @@ a {
   z-index: 0;
   opacity: 80%;
 }
-
 
 .faded-text {
   user-select: none;
@@ -242,7 +234,12 @@ a {
 }
 
 .role {
-  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -265,8 +262,6 @@ a {
   font-weight: 500;
   opacity: 75%;
 }
-
-
 
 /* ----------------------aayush button starts-------------------*/
 
@@ -298,10 +293,9 @@ a {
 
 .btn:hover {
   transition: 0.5s;
-  scale: 1.0;
+  scale: 1;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.574);
- 
 }
 
 .btn::before {
@@ -311,7 +305,7 @@ a {
   width: 100%;
   transform: translate(0%, 82%);
   transform-origin: bottom;
-  transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   z-index: -1;
   background-image: linear-gradient(135deg, #7b4397, #dc2430);
 }
@@ -331,10 +325,10 @@ a {
 
 /* aayush button ends*/
 
-
 .hero-section-right {
   position: relative;
-   margin-bottom: 15rem;
+  margin-bottom: 15rem;
+  margin-right: 20%;
 }
 
 .myCard {
@@ -387,10 +381,8 @@ a {
   font-weight: 700;
 }
 
-
 .frontSide,
 .frontSide::before {
-
   background-image: url("./userAsset/avt.jpg");
   background-size: cover;
   background-position: center;
@@ -410,13 +402,12 @@ a {
   /* transform: rotateY(180deg) rotateZ(180deg); */
 }
 
-
 .frontSide::before,
 .backSide::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  content: '';
+  content: "";
   width: 110%;
   height: 110%;
   position: absolute;
@@ -455,8 +446,7 @@ a {
   }
 }
 
-
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .hero {
     padding: 11rem 1.5rem;
   }
@@ -493,7 +483,6 @@ a {
     gap: 1rem;
   }
 
-
   .hero-section-description {
     font-size: 13px;
     width: 95%;
@@ -505,7 +494,6 @@ a {
     font-size: 12px;
     margin-bottom: 2.5rem;
     padding: 0.9rem 2rem;
-
   }
 
   .faded-text {
@@ -523,18 +511,29 @@ a {
   }
 }
 
-
 /*=============================== Projects Section =============================== */
 
-
 .projectSection {
-  background: linear-gradient(rgb(11, 11, 11) 10%, rgb(15, 15, 15), rgb(5, 5, 5), black, black, black, black);
+  background: linear-gradient(
+    rgb(11, 11, 11) 10%,
+    rgb(15, 15, 15),
+    rgb(5, 5, 5),
+    black,
+    black,
+    black,
+    black
+  );
 }
 
 .projectTitle {
   padding-top: 6rem;
 
-  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
@@ -545,8 +544,7 @@ a {
   color: rgb(235, 196, 247);
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Catamaran', sans-serif;
-
+  font-family: "Catamaran", sans-serif;
 }
 
 .projectContainer {
@@ -606,7 +604,12 @@ a {
   right: 0;
   left: 0;
   /* background: linear-gradient(45deg, #343d68, #343d68be, #343d687c); */
-  background: linear-gradient(90deg, #000000b0, rgba(0, 0, 0, 0.266), #95969600);
+  background: linear-gradient(
+    90deg,
+    #000000b0,
+    rgba(0, 0, 0, 0.266),
+    #95969600
+  );
   z-index: 1;
   transition: 0.5s;
   border-radius: 18px;
@@ -620,7 +623,6 @@ a {
   transform: scaleX(1);
   /* transform: translate(0%, 0%); */
 }
-
 
 .projectNumber {
   position: absolute;
@@ -696,7 +698,7 @@ a {
   font-size: 50px;
   font-weight: bold;
   line-height: 3rem;
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
 }
 
 .projectSubHeading {
@@ -754,7 +756,7 @@ a {
   background-color: #11010100;
   border-radius: 40px;
   cursor: pointer;
-  font-size: 0.80rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 1.8px;
   transform-origin: left;
@@ -778,7 +780,7 @@ a {
   scale: 0.6;
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .projectTitle {
     font-size: 50px;
     /* filter: drop-shadow(0px 0px 7px #780159); */
@@ -820,14 +822,12 @@ a {
     bottom: 2%;
 
     transform: scale(1.05);
-
   }
 
   .projectNumber {
     font-size: 50px;
     display: block;
     filter: drop-shadow(0px 0px 19px #ffffff);
-
   }
 
   .rightNumber,
@@ -849,7 +849,6 @@ a {
     height: 20px;
     min-width: none;
     font-size: 0.5em;
-
   }
 
   .projectSkillsContainer {
@@ -892,8 +891,6 @@ a {
 }
 /*============================= Skill Section Start  =================================*/
 
-
-
 .skillContainer {
   position: relative;
   display: flex;
@@ -925,7 +922,12 @@ a {
 
 .skillHeading {
   /* color: #8a06be; */
-  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
@@ -941,7 +943,6 @@ a {
 .skillSubHeading {
   margin-top: 1rem;
   width: 85%;
-
 }
 
 .skillSubHeading p {
@@ -974,9 +975,7 @@ a {
   transform: scale(0.85);
 }
 
-
 .space2 video {
-
   position: absolute;
   width: 200%;
   top: 50%;
@@ -987,7 +986,7 @@ a {
   z-index: -1;
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .skillContainer {
     padding: 6rem 3rem 2rem 2rem;
     margin: 1rem auto;
@@ -1052,8 +1051,6 @@ a {
   }
 }
 
-
-
 /* ==============================form Section Start ================================================*/
 
 .contactSection {
@@ -1065,12 +1062,21 @@ a {
 
 .contactGrad {
   /* background-color: rgba(255, 0, 0, 0.14); */
-  background: linear-gradient(rgb(0, 0, 0), rgba(8, 8, 8, 0.8), rgba(8, 8, 8, 0.75), rgba(8, 8, 8, 0.433), rgba(8, 8, 8, 0.433), rgba(8, 8, 8, 0.433), rgba(8, 8, 8, 0.433), rgba(8, 8, 8, 0.433), black);
+  background: linear-gradient(
+    rgb(0, 0, 0),
+    rgba(8, 8, 8, 0.8),
+    rgba(8, 8, 8, 0.75),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    rgba(8, 8, 8, 0.433),
+    black
+  );
   height: 100%;
   width: 100%;
   padding-top: 5rem;
 }
-
 
 .upper {
   /* padding-top: 3.5rem; */
@@ -1109,12 +1115,12 @@ a {
   width: 40%;
 }
 
-.left_img>img {
+.left_img > img {
   width: 80%;
   /* filter: drop-shadow(10px 10px 60px #2802a6); */
 }
 
-.right>form {
+.right > form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1126,7 +1132,6 @@ a {
   border-radius: 20px;
   padding: 12px;
   min-width: 500px;
-
 }
 
 input,
@@ -1140,8 +1145,6 @@ textarea {
   margin-bottom: 16px;
   border-radius: 8px;
 }
-
-
 
 ::placeholder {
   color: #e5e5e5d6;
@@ -1186,7 +1189,7 @@ textarea {
   transform: scale(0.95);
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .upper {
     font-size: 40px;
   }
@@ -1195,9 +1198,9 @@ textarea {
     display: none;
   }
 
-  .right>form {
+  .right > form {
     min-width: 80vw;
-    max-width: 450px
+    max-width: 450px;
   }
 }
 
@@ -1227,17 +1230,23 @@ textarea {
   z-index: 100;
 }
 
-.secondLast>a>h2 {
+.secondLast > a > h2 {
   margin-bottom: 20px;
   font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: 0.5px;
-  background: linear-gradient(90.42deg, #4AB1F1 0.58%, #566CEC 37.22%, #D749AF 73.87%, #FF7C51 112.26%);
+  background: linear-gradient(
+    90.42deg,
+    #4ab1f1 0.58%,
+    #566cec 37.22%,
+    #d749af 73.87%,
+    #ff7c51 112.26%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.secondLast>p {
+.secondLast > p {
   font-size: 0.9rem;
   color: rgba(238, 232, 232, 0.673);
   font-weight: 900;
@@ -1259,7 +1268,7 @@ textarea {
   margin-top: 5rem;
 }
 
-.last-quote>.left-border {
+.last-quote > .left-border {
   transform: rotateY(180deg);
 }
 
@@ -1269,7 +1278,7 @@ textarea {
   margin-top: 4px;
 }
 
-.last-quote>p {
+.last-quote > p {
   color: #ffffff;
   opacity: 40%;
   text-align: center;
@@ -1292,12 +1301,3 @@ textarea {
   font-size: 0.7rem;
   color: gray;
 }
-
-
-
-
-
-
-
-
-
